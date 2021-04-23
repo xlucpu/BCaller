@@ -1,0 +1,27 @@
+Package: BCaller
+Title: Calculate immune-related genes pair index (IRGPI) for bladder cancer
+Version: 0.99.1
+Authors@R: 
+    person(given = "Xiaofan",
+           family = "Lu",
+           role = c("aut", "cre"),
+           email = "xlu.cpu@foxmail.com",
+           comment = c(ORCID = "0000-0003-2417-6548"))
+Description: This package calculates an IRGPI risk score from a single-sample perspective to statifiy bladder cancer patient prognosis.
+Depends: R (>= 4.0.1)
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown,
+    kableExtra
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+biocViews: Classification, Survival
+URL: https://github.com/xlucpu/BCaller
+BugReports: https://github.com/xlucpu/BCaller/issues
+Collate: 
+    'calIRGPI.R'
+
