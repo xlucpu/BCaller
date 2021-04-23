@@ -24,7 +24,11 @@ devtools::install_github("xlucpu/BCaller")
 # load R package and internal data set
 library(BCaller)
 load(system.file("extdata", "demo.RData", package = "BCaller", mustWork = TRUE)) # load example data
+
+# calculate IRGPI
 IRGPI  <- calIRGPI(expr = demo) 
+
+# print
 head(IRGPI)
 #        SampleID     IRGPI
 # 1 BLCA-A9KO-01A 1.4756139
