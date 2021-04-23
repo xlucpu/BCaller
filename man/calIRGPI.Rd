@@ -17,6 +17,12 @@ A data frame stored sample name and estimated IRGPI.
 \description{
 This function calculates an IRGPI risk score individually for bladder cancer only.
 }
+\examples{
+library(BCaller)
+load(system.file("extdata", "demo.RData", package = "BCaller", mustWork = TRUE)) # load example data
+IRGPI  <- calIRGPI(expr = demo)
+head(IRGPI)
+}
 \references{
 Prognosis stratification and personalized treatment in bladder cancer through a robust immune gene-pair based signature
 }

@@ -8,10 +8,10 @@
 #' @export
 #' @references Prognosis stratification and personalized treatment in bladder cancer through a robust immune gene-pair based signature
 #' @author Xiaofan Lu
-#' @example
+#' @examples
 #' library(BCaller)
 #' load(system.file("extdata", "demo.RData", package = "BCaller", mustWork = TRUE)) # load example data
-#' IRGPI  <- CalIRGPI(expr = demo)
+#' IRGPI  <- calIRGPI(expr = demo)
 #' head(IRGPI)
 calIRGPI <- function(expr     = NULL,
                      res.path = getwd()) {
